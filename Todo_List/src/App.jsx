@@ -2,17 +2,13 @@ import { useState, useEffect } from 'react'
 import './App.css'
 
 function App() {
-  const [todos, setTodos] = useState([])
+  // Load todos from localStorage on mount using lazy initialization
+  const [todos, setTodos] = useState(() => {
+    const savedTodos = localStorage.getItem('todos')
+    return savedTodos ? JSON.parse(savedTodos) : []
+  })
   const [inputValue, setInputValue] = useState('')
   const [filter, setFilter] = useState('all') // all, active, completed
-
-  // Load todos from localStorage on mount
-  useEffect(() => {
-    const savedTodos = localStorage.getItem('todos')
-    if (savedTodos) {
-      setTodos(JSON.parse(savedTodos))
-    }
-  }, [])
 
   // Save todos to localStorage whenever they change
   useEffect(() => {
