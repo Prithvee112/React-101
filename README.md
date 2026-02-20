@@ -31,7 +31,7 @@ A currency converter using a real-time API:
 
 **Location:** `Currency_Converter/`
 
-### 4. Todo List (Todo_List) ⭐ NEW
+### 4. Todo List (Todo_List)
 A fully-featured todo list application:
 - Add, delete, and mark todos as complete
 - Filter todos (All, Active, Completed)
@@ -41,6 +41,22 @@ A fully-featured todo list application:
 - Responsive design
 
 **Location:** `Todo_List/`
+
+### 5. Shopping Cart (Shopping_Cart) ⭐ NEW
+A full-featured shopping cart application:
+- Browse, search, and filter 12 products across 4 categories
+- Sort products by price or rating
+- Add/remove items and adjust quantities
+- Live order summary with tax and free-shipping threshold
+- Persistent cart with localStorage
+- Multi-page navigation with React Router
+- Global cart state with Context API + useReducer
+
+**Location:** `Shopping_Cart/`
+
+**New concepts:** `useReducer`, `useContext`, `useMemo`, React Router (`BrowserRouter`, `Routes`, `Route`, `Link`), custom hooks
+
+
 
 ## Prerequisites
 
@@ -115,6 +131,7 @@ These projects are designed to progressively teach React concepts:
 2. **Password_Generator** - Multiple hooks and side effects
 3. **Currency_Converter** - API integration and component composition
 4. **Todo_List** - Complete CRUD operations, filtering, and data persistence
+5. **Shopping_Cart** - React Router, Context API + useReducer, useMemo, custom hooks
 
 ## License
 
