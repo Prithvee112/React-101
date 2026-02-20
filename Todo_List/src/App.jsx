@@ -57,7 +57,7 @@ function App() {
   const activeCount = todos.filter((todo) => !todo.completed).length
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-400 via-pink-500 to-red-500 py-8 px-4">
+    <div className="min-h-screen bg-gradient-to-br from-slate-600 via-gray-700 to-zinc-800 py-8 px-4">
       <div className="max-w-2xl mx-auto">
         <h1 className="text-5xl font-bold text-white text-center mb-8 drop-shadow-lg">
           📝 Todo List
