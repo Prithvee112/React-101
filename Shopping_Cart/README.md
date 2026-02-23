@@ -51,15 +51,50 @@ Shopping_Cart/
 └── vite.config.js
 ```
 
-## Getting Started
+## Prerequisites
 
+- Node.js (version 14 or higher)
+- npm or yarn
+
+## Installation & Setup
+
+1. Navigate to the Shopping_Cart directory:
 ```bash
 cd Shopping_Cart
+```
+
+2. Install dependencies:
+```bash
 npm install
+```
+
+## Running the Application
+
+### Development Mode
+
+To run the application in development mode with hot reload:
+
+```bash
 npm run dev
 ```
 
-Open [http://localhost:5173](http://localhost:5173) in your browser.
+The application will start on `http://localhost:5173/`
+
+### Build for Production
+
+To create a production build:
+
+```bash
+npm run build
+```
+
+### Preview Production Build
+
+To preview the production build locally:
+
+```bash
+npm run preview
+```
 
 ## Available Scripts
 
